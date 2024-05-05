@@ -396,7 +396,7 @@ function MainPage() {
                                   <p className="text">
                                       ㆍ프론트 기능성 향상을 위해 JavaScript 기반 <span className="font_blue">프론트 리팩토링 및 최적화</span> 작업 수행,
                                       이를 통해 <span className="font_blue">사용자 인터랙션(UI)와 웹 애플리케이션의 전반적인 반응성 개선</span></p>
-                                  <p className="text">ㆍ기존 솔루션의 <span className="font_blue">유지보수성과 확장성을 고려하여 코드 구조 재검토 및 리팩토링</span> 실행,
+                                  <p className="text">ㆍ기존 솔루션의 <span className="font_blue">유지보수성과 확장성을 고려 하여 코드 구조 재검토 및 리팩토링</span> 실행,
                                       효율적인 <span className="font_blue">프로젝트 관리 및 팀 내 커뮤니케이션 강화</span>.</p>
                               </div>
 
