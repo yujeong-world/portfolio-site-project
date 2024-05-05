@@ -5,7 +5,6 @@ import {SectionsContainer, Section, Header, /*Footer*/} from 'react-fullpage';
 import $ from 'jquery';
 import React , { useState, useEffect } from "react";
 // 오류 메시지에 따라 변경할 임포트
-// 오류 메시지에 따라 변경할 임포트
 // import { Typed } from 'react-typed';
 // 또는
 import { ReactTyped as Typed } from 'react-typed';
@@ -375,7 +374,6 @@ function MainPage() {
                               새로운 도전과 성장의 기회를 제공하는 회사에서 함께 일하며, 제 비전을 현실로 만들어가고자 합니다.
                           </div>
                       </div>
-
 
                   </div>
 
