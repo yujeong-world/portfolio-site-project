@@ -377,8 +377,6 @@ function MainPage() {
                       </div>
 
 
-
-
                   </div>
 
               </Section>
