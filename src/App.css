@@ -27,6 +27,10 @@
 .App-link {
   color: #61dafb;
 }
+body{
+  font-family: Noto Sans KR, sans-serif;
+  line-height: normal;
+}
 
 @keyframes App-logo-spin {
   from {
@@ -34,5 +38,367 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+.wrapper {
+  height: 100vh;
+  /*This part is important for centering*/
+  display: grid;
+  place-items: center;
+}
+/*
+
+.typing-demo {
+  width: 22ch;
+  animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-family: monospace;
+  font-size: 2em;
+}
+*/
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent
+  }
+}
+.font_blue{
+  color: #0288d1;
+}
+.nav{
+  width: 100%;
+  display: flex;
+  height: 48px;
+  box-shadow: 0px 2px 4px -1px rgba(0,0,0,0.2),0px 4px 5px 0px rgba(0,0,0,0.14),0px 1px 10px 0px rgba(0,0,0,0.12);
+
+}
+.nav a{
+  display: block;
+  width: 25%;
+  text-align: center;
+  line-height: 48px;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.54);
+  font-size: 12.25px;
+  font-family: "Noto Sans KR", sans-serif;
+}
+.nav a:hover, .active{
+  color: #0288d1;
+  border-bottom: 2px solid #0288d1 ;
+ /* transition: 1s all;
+  opacity : 0.8;*/
+}
+.typing-demo{
+  font-family: "Noto Sans KR", sans-serif;
+  margin: auto;
+  margin-top: 200px;
+}
+.Section{
+  /*padding-top: 48px !important;*/
+
+}
+/*header{
+  position: static !important;
+}*/
+.wd_80{
+  width: 80%;
+}
+.mg_auto{
+  margin: auto;
+}
+.container{
+  width: 60%;
+  display: flex;
+  margin: auto;
+  padding-top: 48px;
+  flex-wrap: wrap;
+}
+.title{
+  width: 100%;
+  text-align: center;
+  color: #000000;
+  border-bottom: 1px solid;
+  border-bottom-color: #cccccc;
+  font-size: 3rem;
+  line-height: 1.5;
+}
+.title img{
+  width: 36px;
+  margin-right: 15px;
+}
+/*메인 텍스트 영역*/
+#particle-container{
+  position: relative;
+}
+#particle-container .main_text:nth-child(1){
+  position: absolute;
+  display: block;
+  left: 40%;
+  top: 280px;
+  text-align: center;
+  height: auto;
+  font-size: 35px;
+}
+.wd_50{
+  width: 50%;
+}
+.about_content{
+  width: 33.3333%;
+  margin-bottom: 2rem;
+}
+.about_content .inner{
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+
+}
+.about_content .inner p{
+  width: 32px;
+}
+.about_content .inner p img{
+  width: 100%;
+}
+.about_content .text_box{
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 6%;
+  width: 79%;
+}
+.about_content .inner .text{
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: #212529;
+  width: 100%;
+}
+.about_content .inner .text2{
+  font-weight: 400;
+  font-size: 1rem;
+  width: 100%;
+}
+/*.career_content{
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+}*/
+.about_cont_container{
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+.career_img {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  width: 40%;
+  height: 20%;
+  border: 1px solid #cccccc;
+  border-radius: 50%;
+  margin: 10px auto;
+}
+.career_img img{
+  width: 73%;
+}
+.text_container{
+  border-left: 1px solid #cccccc;
+  width: 80%;
+}
+/*.career_content .text_container .text_area h1{
+  padding-bottom: 0.5rem;
+  font-weight: 900;
+  font-size: 1.5rem;
+}*/
+.swiper {
+  width: 80%;
+  height: 400px;
+}
+
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 18px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #000000;
+}
+
+.swiper-slide:nth-child(1n) {
+  background-color: #ffffff;
+}
+
+.swiper-slide:nth-child(2n) {
+  background-color: #AEE2FF;
+}
+
+.swiper-slide:nth-child(3n) {
+  background-color: #d6ecfa;
+}
+
+
+.swiper-cards{
+  overflow: visible !important;
+}
+.career_content{
+  font-size: 13px;
+  padding: 5px;
+}
+.career_content.card{
+  width: 85%;
+  margin: auto;
+  padding: 20px;
+}
+.career_content.card .title_text{
+  border-left: 3px #cccccc;
+  margin-bottom: 8px;
+}
+.career_content.card .text{
+  font-size: 16px;
+  font-weight: 500;
+}
+.career_content .text{
+  font-size: 18px;
+  padding: 5px;
+  text-align: center;
+  width: 80%;
+  margin: auto;
+}
+.career_content .hr_line{
+  border-bottom: 1px solid #cccccc;
+  margin: auto;
+  width: 80%;
+}
+.career_content.card .hr_line{
+  border-color: #ffffff;
+}
+.career_content .term{
+  color: #3c3c3c;
+  font-size: 14px;
+  width: 80%;
+  margin: 8px auto auto auto;
+
+}
+.career_content .title_text{
+  font-size: 20px;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 8px;
+}
+.se{
+  background-color: #E1F5FE;
+}
+
+/* 프로젝트 영역 */
+.project_text{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #d6ecfa;
+  border-radius: 5%;
+  padding: 1%;
+  justify-content: space-around;
+}
+.project_text h3{
+  width: 100%;
+  text-align: center;
+}
+.project_text .project_img{
+  width: 48%;
+}
+.project_text .project_img img{
+  width: 100%;
+}
+.project_text .project_content{
+  width: 48%;
+  font-size: 14px;
+}
+.bord{
+  font-weight: 900;
+}
+
+/* 아웃트로 영역 -----------------------*/
+.outro_container{
+  margin-top: 30%;
+}
+.outro_title{
+  font-size: 30px;
+  font-width: 900 !important;
+}
+.nanum-pen {
+  font-family: "Nanum Pen Script", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/*CSS 화이트*/
+.font_wh{
+  color: white;
+}
+/*반응형*/
+/* 타블렛 */
+@media screen and (max-width:1023px) {
+
+}
+
+/* 모바일 */
+@media screen and (max-width:767px) {
+  .container{
+    width: 90%;
+    flex-wrap: wrap;
+  }
+  .about_content{
+    width: 100%;
+    margin-bottom: 0;
+  }
+  .about_cont_container{
+    margin: auto;
+
+  }
+  .title{
+    font-size: 20px;
+  }
+  .title img{
+    width: 20px;
+  }
+  .about_content .inner .text{
+    font-size: 16px;
+    margin: 0;
+  }
+  .about_content .text_box{
+   ;
+  }
+  .about_content .inner p{
+    width: 25px;
+  }
+  .swiper-slide {
+    width: 80%;
+  }
+  /*커리어 페이지*/
+  .swiper{
+    width: 90%;
+    height: auto;
+  }
+  .career_content .title_text{
+    font-size: 17px;
+  }
+  .career_content .term{
+    font-size: 13px;
+  }
+  .career_content .text {
+    font-size: 15px;
+  }
+  .career_content.card .text{
+    font-size: 15px;
   }
 }
