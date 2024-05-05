@@ -211,6 +211,7 @@ function MainPage() {
                                       <p>
                                           <img src="https://cdg-portfolio.com/images/about-me/pencil-fill.svg"></img>
                                       </p>
+
                                       <div className="text_box">
                                           <p className="text">학력</p>
                                           <p className="text text2">가톨릭대학교<br/>1전공 화학과<br/>2전공 정보통신학과</p>
