@@ -436,7 +436,7 @@ function MainPage() {
                                   <div className="slider-container">
                                       <Slider {...settings}>
                                           <div>
-                                              <h3>차세대 국방부 디지털 정보 디스플레이 센터(DIDC) 웹 인터페이스 최적화</h3>
+                                              <h3>차세대 국방부 디지털 정보 디스플레이 센터(DIDC)웹 인터페이스 최적화</h3>
                                           </div>
                                           <div>
                                               <h3>2</h3>
