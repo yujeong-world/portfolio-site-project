@@ -47,35 +47,6 @@ function MainPage() {
         autoplaySpeed: 3000, // 자동으로 넘길 시 시간 간격
     }
 
-    //헤더 스크롤 효과
-    // 스크롤에 따라 변경할 상태
-   /* const [activeLink, setActiveLink] = useState('');
-
-    useEffect(() => {
-        const handleScroll = () => {
-            // 현재 스크롤 위치에 따라 activeLink 상태 업데이트
-            const scrollPosition = window.scrollY;
-
-            // 예를 들어, 각 섹션의 offsetTop 값을 기준으로 activeLink 상태를 업데이트
-            // 이 부분은 프로젝트의 구체적인 요구사항에 맞게 조정해야 합니다.
-            // 아래 코드는 예시일 뿐이며, 실제 섹션의 위치에 따라 조건을 조정해야 합니다.
-            if (scrollPosition < 500) {
-                setActiveLink('sectionOne');
-            } else if (scrollPosition >= 500 && scrollPosition < 1000) {
-                setActiveLink('sectionTwo');
-            } else if (scrollPosition >= 1000 && scrollPosition < 1500) {
-                setActiveLink('sectionThree');
-            } else {
-                setActiveLink('section4');
-            }
-        };
-
-        window.addEventListener('scroll', handleScroll);
-
-        return () => {
-            window.removeEventListener('scroll', handleScroll);
-        };
-    }, []);*/
     const [activeSection, setActiveSection] = useState('');
 
     useEffect(() => {
@@ -123,69 +94,6 @@ function MainPage() {
 
               <Section>
 
-                 {/* <div className="wrapper">
-            <div className="typing-demo">
-              <span>안녕하세요.</span>
-            </div>
-              <div className="typing-demo">
-                  <span>끊임없이 도전하는</span>
-              </div>
-              <div className="typing-demo">
-                  <span>웹개발자 김정호입니다.</span>
-              </div>
-          </div>*/}
-
-                 {/* <div className="typing-demo">
-                      <Typed
-                          strings={[
-                              '안녕하세요.',
-                              '끊임없이 도전하는',
-                              '웹개발자 김정호입니다.'
-                          ]}
-                          typeSpeed={80}
-                          backSpeed={50}
-
-                      />
-                  </div>*/}
-
-                  {/*그래디언트*/}
-                  {/*<div className="text-container">
-                      <Typed
-                          strings={[
-                              '안녕하세요.',
-                              '끊임없이 도전하는',
-                              '웹개발자 김정호입니다.'
-                          ]}
-                          typeSpeed={80}
-                          backSpeed={50}
-
-                      />
-                  </div>
-                  <div className="gradient-bg">
-                      <svg xmlns="http://www.w3.org/2000/svg">
-                          <defs>
-                              <filter id="goo">
-                                  <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur"/>
-                                  <feColorMatrix in="blur" mode="matrix"
-                                                 values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -8" result="goo"/>
-                                  <feBlend in="SourceGraphic" in2="goo"/>
-                              </filter>
-                          </defs>
-                      </svg>
-                      <div className="gradients-container">
-                          <div className="g1"></div>
-                          <div className="g2"></div>
-                          <div className="g3"></div>
-                          <div className="g4"></div>
-                          <div className="g5"></div>
-                          <div className="interactive"></div>
-                      </div>
-                  </div>*/}
-                  {/*파티클*/}
-                  {/*<div className="pyro">
-                      <div className="before"></div>
-                      <div className="after"></div>
-                  </div>*/}
 
                   <div id="particle-container">
                       <Typed className="main_text"
@@ -312,19 +220,6 @@ function MainPage() {
 
                               </div>
                           </div>
-
-                          {/*<div className="about_content">
-                              <div className="inner">
-                                  <p>
-                                      <img src="https://cdg-portfolio.com/images/about-me/pencil-fill.svg"></img>
-                                  </p>
-                                  <div className="text_box">
-                                      <p className="text">자격증</p>
-                                      <p className="text text2">빅데이터 분석기사, SQLD, ADSP</p>
-                                  </div>
-                              </div>
-
-                          </div>*/}
                       </div>
 
 
@@ -332,32 +227,6 @@ function MainPage() {
 
               {/*경력*/}
               <Section className="se">
-
-                  {/*<div className="slider-container">
-                      <Slider {...settings}>
-                          <div>
-                              <h3>1</h3>
-                          </div>
-                          <div>
-                              <h3>2</h3>
-                              <p>Hello</p>
-                          </div>
-                          <div>
-                              <h3>3</h3>
-                              <p>See ....</p>
-                              <p>Height is adaptive</p>
-                          </div>
-                          <div>
-                              <h3>4</h3>
-                          </div>
-                          <div>
-                              <h3>5</h3>
-                          </div>
-                          <div>
-                              <h3>6</h3>
-                          </div>
-                      </Slider>
-                  </div>*/}
                   <div className="container">
                       <h3 className="title"><img src="https://cdg-portfolio.com/images/black-link.png"></img>CAREER</h3>
 
@@ -419,63 +288,6 @@ function MainPage() {
                           </SwiperSlide>
 
                       </Swiper>
-                     {/* <div className="career_content">
-                          <div className="career_img">회사 로고 이미지 영역
-                              <img src="https://search.pstatic.net/common/?autoRotate=true&quality=95&type=w750&src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20230721_122%2F1689915122935OELSk_PNG%2Fbplace_logo_new02.png"/>
-                          </div>
-                          <div className="text_container">
-                              <div className="text_area">
-
-                                  <h1>(주)비플레이스</h1>
-                                  <p>2022.09. ~2023.12 </p>
-                                  회사 설명np
-                                  <p>(주)비플에이스는 빅데이터 솔루션 서비스를 개발 공급하는 회사이며,
-                                      저는 웹 개발 포지션으로 기존 웹 인터페이스를 개선하고 기존의 코드를 리팩토링하여 전반적인 반응성을 개선하였으며
-                                      , 기존 솔루션의 유지보수성과 확장성을 고려하여 개발을 진행해왔습니다.
-                                  </p>
-                                  <div className="slider-container">
-                                      <Slider {...settings}>
-                                          <div>
-                                              <h3>차세대 국방부 디지털 정보 디스플레이 센터(DIDC)웹 인터페이스 최적화</h3>
-                                          </div>
-                                          <div>
-                                              <h3>2</h3>
-                                              <p>Hello</p>
-                                          </div>
-                                          <div>
-                                              <h3>3</h3>
-                                              <p>See ....</p>
-                                              <p>Height is adaptive</p>
-                                          </div>
-                                          <div>
-                                              <h3>4</h3>
-                                          </div>
-                                          <div>
-                                              <h3>5</h3>
-                                          </div>
-                                          <div>
-                                              <h3>6</h3>
-                                          </div>
-                                      </Slider>
-                                  </div>
-                                  <p className="hr_line"></p>
-                                  <h4>차세대 국방부 디지털 정보 디스플레이 센터(DIDC) 웹 인터페이스 최적화</h4>
-                                  <p>2023년 1월 ~ 2023년 5월</p>
-                                  <p>기술 스택 : Vue.js</p>
-                                  <p>기존 웹 인터페이스의 사용성 및 시각적 요소 개선을 위해 UI 구성요소(텍스트 및 버튼)의 디자인과 문구를 업데이트.</p>
-                                  <p>프론트 엔드 기능성 향상을 위해 JavaScript 코드 수정 및 최적화 작업 수행, 이를 통해 사용자 인터랙션(UI) 와 웹 애플리케이션의 전반적인 반응성 개선.</p>
-                                  <p>기존 솔루션의 유지보수성과 확장성을 고려하여 코드 구조 재검토 및 리팩토링 실행, 효율적인 프로젝트 관리 및 팀 내 커뮤니케이션 강화.</p>
-
-                                  <h4>나이스 정보통신 차세대 웹 화면 개발 및 최적화</h4>
-                                  <p> 2023년 9월 ~ 2023년 11월</p>
-                                  <p>Spring Boot, WebSquare5</p>
-                                  <p>컨트롤러 레이어에서 서비스 레이어로 비즈니스 로직 이동을 통해 소프트웨어 아키텍처의 체계성 및 가독성 향상. 이를 통해 코드의 모듈화 및 유지보수 효율성 증가.</p>
-                                  <p>- WebSquare5를 활용한 프론트 엔드 개발 중, 버전 업데이트로 인해 발생한 호환성 문제 해결. 기존 코드를 최신 버전과 호환되도록 수정하여 애플리케이션의 안정성 및 성능 유지.</p>
-                                  <p>체계적인 소스 코드 클렌징과 정리를 통해 시스템의 유지보수 용이성 및 미래 확장성 보장.</p>
-                              </div>
-
-                          </div>
-                      </div>*/}
                   </div>
 
               </Section>
