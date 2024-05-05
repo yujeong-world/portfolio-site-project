@@ -383,7 +383,6 @@ function MainPage() {
 
               </Section>
 
-
           </SectionsContainer>
       </div>
   );
