@@ -365,25 +365,28 @@ function MainPage() {
                           </div>
 
                           <div className="project_content">
-                                  게시판 프로젝트는 Java 17 및 Spring Boot 2.7을 기반으로 구현되었습니다.
-                                  <br/>
-                                  또한, Docker와 GitHub Action을 이용한 CI/CD 파이프라인 구축으로
-                                  배포 과정의 자동화를 구현하였습니다.
-                                  <br/>
-                                  <br/>
-                                  <span className="bord">주요 기능</span>
-                                  <br/>
-                                  회원가입 소셜 로그인을 통한 간편한 접근성을 제공함으로써 사용자 경험을 대폭 향상시켰습니다.
-                                  <br/>
-                                  게시글 및 댓글 작성, 수정, 삭제 기능을 사용할 수 있습니다.
-                                  <br/>
-                                  사용자는 검색, 좋아요, 북마크, 인기글 보기와 같은 기능을 통해 컨텐츠를 보다 효율적으로 탐색하고 관리할 수 있습니다.
-                                  <br/>
-                                  <br/>
-
-                              <span className="bord">GitHub</span> <a target="_blank" href="https://github.com/jeongho22/Board_personal">https://github.com/jeongho22/Board_personal</a>:
+                              게시판 프로젝트는 Java 17 및 Spring Boot 2.7을 기반으로 구현되었습니다.
                               <br/>
-                              <span className="bord">URL</span> :<a target="_blank" href="http://jeonghologin2.link/login">http://jeonghologin2.link/login</a>
+                              또한, Docker와 GitHub Action을 이용한 CI/CD 파이프라인 구축으로
+                              배포 과정의 자동화를 구현하였습니다.
+                              <br/>
+                              <br/>
+                              <span className="bord">주요 기능</span>
+                              <br/>
+                              회원가입 소셜 로그인을 통한 간편한 접근성을 제공함으로써 사용자 경험을 대폭 향상시켰습니다.
+                              <br/>
+                              게시글 및 댓글 작성, 수정, 삭제 기능을 사용할 수 있습니다.
+                              <br/>
+                              사용자는 검색, 좋아요, 북마크, 인기글 보기와 같은 기능을 통해 컨텐츠를 보다 효율적으로 탐색하고 관리할 수 있습니다.
+                              <br/>
+                              <br/>
+
+                              <span className="bord">GitHub</span> <a target="_blank"
+                                                                      href="https://github.com/jeongho22/Board_personal">https://github.com/jeongho22/Board_personal</a>:
+                              <br/>
+                              <span className="bord">URL</span> :<a target="_blank"
+                                                                    href="http://jeonghologin2.link/login">http://jeonghologin2.link/login</a>
+                              <br/>
                               <br/>
                               <span className="bord">Frontend</span> : Thymleaf , javascript , CSS, HTML
                               <br/>
@@ -403,8 +406,8 @@ function MainPage() {
                   <div className="container">
 
 
-                      <div className="outro_container">
-                          <div>
+                  <div className="outro_container">
+                      <div>
                               <span className="outro_title nanum-pen">
                                   <Typed
                                       strings={[
@@ -414,27 +417,32 @@ function MainPage() {
                                       backSpeed={50}
                                       loop
                                   /></span>
-                              <br/>
-                              <br/>
-                              <br/>
+                          <br/>
+                          <br/>
+                          <br/>
 
-                              안녕하세요 ! 1년차 웹 주니어 개발자 김정호 입니다.
-                              <br/>
-                              <br/>
-                              1년차 개발자로서 경험을 쌓아가며, 전문적인 역량을 키워나가고 있습니다.
-                              <br/>
-                              이전 직장을 다니면서 실무와 맞닿아있는 프로젝트를 진행하며 웹 개발의 핵심 프로세스를 이해하고,
-                              <span className="font_blue">현재는 더 다양한 기술을 탐구하며 더 나은 솔루션을 찾고 있습니다.</span>
-                              <br/>
-                              <br/>
-                              <span className="font_blue">최근에는 AWS와 Doker와 같은 클라우드 및 컨테이너 기술</span>에 대해서 집중적으로 학습하고 있습니다.
-                              <br/>
-                              이를 통해  <span className="font_blue">확장성 있는 애플리케이션 아키텍쳐를 설계</span>하고, 효율적인 배포 및 관리를 위한 노력을 기울이고 있습니다.
-                              <br/>
-                              <br/>
-                              새로운 도전과 성장의 기회를 제공하는 회사에서 함께 일하며, 제 비전을 현실로 만들어가고자 합니다.
-                          </div>
+                          안녕하세요 ! 1년차 웹 주니어 개발자 김정호 입니다.
+                          <br/>
+                          <br/>
+                          1년차 개발자로서 경험을 쌓아가며, 전문적인 역량을 키워나가고 있습니다.
+                          <br/>
+                          이전 직장을 다니면서 실무와 맞닿아있는 프로젝트를 진행하며 웹 개발의 핵심 프로세스를 이해하고,
+                          <span className="font_blue">현재는 더 다양한 기술을 탐구하며 더 나은 솔루션을 찾고 있습니다.</span>
+                          <br/>
+                          <br/>
+                          <span className="font_blue">최근에는 AWS와 Doker와 같은 클라우드 및 컨테이너 기술</span>에 대해서 집중적으로 학습하고 있습니다.
+                          <br/>
+                          이를 통해 <span className="font_blue">확장성 있는 애플리케이션 아키텍쳐를 설계</span>하고, 효율적인 배포 및 관리를 위한 노력을 기울이고
+                          있습니다.
+                          <br/>
+                          <br/>
+                          새로운 도전과 성장의 기회를 제공하는 회사에서 함께 일하며, 제 비전을 현실로 만들어가고자 합니다.
+                          <br/>
+                          <br/>
+                          <span className="bord">노션 포트폴리오 링크 </span> :<a target="_blank"  className="font_black"
+                                                                href="https://www.notion.so/Portfolio-4886fd5a43bb429483de25ed7dd5cc57">https://www.notion.so/Portfolio-4886fd5a43bb429483de25ed7dd5cc57</a>
                       </div>
+                  </div>
 
                   </div>
 
