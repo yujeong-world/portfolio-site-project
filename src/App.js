@@ -292,35 +292,95 @@ function MainPage() {
 
               </Section>
 
-              <Section>
+              <Section className="se2">
                   <div className="container">
 
                       <h3 className="title">
                           <img src="https://cdg-portfolio.com/images/black-link.png"></img>
                           PROJECT
                       </h3>
+                      <div className="project_content pc-display-none">
 
-                      <div className="project_text">
+                          <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
+                              <SwiperSlide>
+                                  <h3 className="text_center font_18">게시판 프로젝트</h3>
+                                  <div className="project_img">
+                                      <img src="https://github.com/yujeong-world/project-board/assets/124220083/7de54ae6-3c36-4cb6-8ac2-cf25597b7af0"/>
+                                  </div>
+                                  <div className="project_content font_15">
+                                      <div className="mt-50">
+                                          게시판 프로젝트는 Java 17 및 Spring Boot 2.7을 기반으로 구현되었습니다.
+                                          <br/>
+                                          또한, Docker와 GitHub Action을 이용한 CI/CD 파이프라인 구축으로
+                                          배포 과정의 자동화를 구현하였습니다.
+                                          <br/>
+                                          <br/>
+                                      </div>
+
+
+                                  </div>
+                              </SwiperSlide>
+                              <SwiperSlide>
+                                  <div className="project_content font_15">
+                                      <div className="project_img mt-35">
+                                          <img className="he-180" src="https://github.com/yujeong-world/portfolio-site-project/assets/124220083/6919d77c-5e04-4b30-8839-435037d1185e"/>
+                                      </div>
+                                      <div className="mt-40">
+                                          <span className="bord">주요 기능</span>
+                                          <br/>
+                                          - 회원가입 소셜 로그인을 통한 간편한 접근성을 제공함으로써 사용자 경험을 대폭 향상시켰습니다.
+                                          <br/>
+                                          - 게시글 및 댓글 작성, 수정, 삭제 기능을 사용할 수 있습니다.
+                                          <br/>
+                                          - 사용자는 검색, 좋아요, 북마크, 인기글 보기와 같은 기능을 통해 컨텐츠를 보다 효율적으로 탐색하고 관리할 수 있습니다.
+                                          <br/>
+                                          <br/>
+                                      </div>
+                                  </div>
+                              </SwiperSlide>
+                              <SwiperSlide>
+                                  <h3 className="text_center">Tech Stacks</h3>
+                                  <img className="tech_icon"
+                                      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAFgElEQVR4nO2aWWyWRRSGnwiWBApFtC4tSxSiqEm5UTTeYaJGg7Vg3G/UcIOtxkoTF4xGMFIXXOIFgSDRaIhRQI2Ct3KhoMXlRqRGYhBj4oUVqbaULr85yfuZ43Tm678h+SNvMmkzZ7Yzc+Y9Z873wyn8P/AsMAoUgjIMdFFDOBxRIitfUSOYAYwBg8AkVz9d9ceAydQArtDOfx2R/SjZQk4i5gKdQOME7e7WYrdGZB9IdssEYzQCDwJzqDIWOLv/Bbg20a4OeE3tHo/In5Zsg9rGcI3msHY/AfNPhBJH9NdsfT0wRW0WAVuAPnepb4yMdbOT96lPi2Sm2PMa2+R/VFMZr8QnurCPAMdV9w2ww01uf3uAhxIX+nTRb0/QZzvwpaPo1SKN3U6ZC8pVojlQYpqTXQ5873b3KLCmRJu2O7cW6HfjHBRZZKgPlGkqR5F7NcAAMCsit0meA54pggDyYH3XAS/qFEKcqTUURCQlYypwQAO8wMnDeq3hB21eWVgsm7VwY0mRfcy8OoCPge+AP1Xs/11AOzC7yLGu1tzHZc4V4UntyM8JE/N3aqMUL0xQbHHvAPNyxpsJHMqh8pJh7LNHA76caNOqC29thoC3gduBi0QS0/T/HZINOZKI0bThVbX5LAh1KsIODWqXMsT9LtK1XT6/iPGMSre50zFTDNEtuVFzVbBIXH80wk6tWsiIwpdSsUp9RyMnc7aoecw5zYqwRTtjfiK8E5k5laOEVybz5OcFsrWSbaZC1CmUGIs4u83OnEJMkcntday1RyYUi7G2a6yNEadpc/+WE5sl0QBcCawAXtcEXwRt5sgkhiJ3olmhS97DKvTQ8zXWsPp79KifBaP3yCVYqJREt8KA2OQWO3l0qN4YKDyJTIlvgZs0qZU2+ZKC4qpwh+1kTXZfwvTCcihBPv8wz6B27S3gUeCGCP3tUlujU48HVL9fJxuiwSljjtHjLtV/FKH/VgWSW/VgG3SMNw6ZpsVwdq/aXhjUf656O4kUlqmN3RkP8zMFKToRJrn1jkNSEEHGVqGtZpFsng3PcM7Qw/rE6lM4oYqk6kPz+k8UqS9ikAMJ09qrervYKSx3oUe5plWfp0gW7I0pZN4hJ9gWee3tTFz2DreYhkQg2Jtgp+yyfxh5VS7Xe/99Pb6y16WteRy6xFZZQOeLUaBHe4J+6zRGQae2THdihhaTKbFPC4zR78rIusL1HNM84br+Bdv9S4HbgE3qaE7JY7Z2Yyjylm5yysTKvkgossA5xKaEQzSvfytwcTkJPh+iWLjgkSm5LdGvXfegX+VTmVN4Ej663pAIUfrKCVFCZHkqC+A8mlzKJveIJ0CXSzWdm8iD2RoqRot2pT8Sxi91YfyqMpUYUbEIwqOx2mG8P3rLmIRod+HN9iKTaQvcmCMRBkNzFdSuKvCBoKV/YljqzGxIDHSnktX1KgtFse+6BN+RyEmE2ZNYgFkWXnLpmDyPfRbwSpHJh2GxUMheHvWOri2VWhGuk42Wko5pli/YqSg4Y639imxXRt4cKSzW3KNKbpeFRpcVf5iTh8e0hl+Bc8oZoFMD/J4wqZkypXVVSJl2K/1zRkQ+XWso6JtJyZjrkti7gyT2Epc8K8h01kScZh7myU/4JPZhZRczTFMCPZOVMn7uZ4VZygOPusdR7LNCZ+KBNlm+Y59b/JjGMM+fvfrWay6vhK2lInhlBhzrPOFinhZ5X/+h5/rIWG1O3qc+mbMzxVc7ah6ophIxZXrFJjEY37+hdvZBKMRTkm3K8Q2XufdOVZXI0KzvE/a5IQ8rtIg3I7L3JLO8cB6maq5iafqE4CrnkUMclOwSagANusB/AacFnrqmfjCAvqXU/E84kINL/aimkrfLKVAr+BuzQCceBWmSfAAAAABJRU5ErkJggg=="/>
+                                  <div className="project_content font_15">
+                                  <span className="bord">GitHub</span> <a target="_blank" href="https://github.com/jeongho22/Board_personal">https://github.com/jeongho22/Board_personal</a>:
+                                  <br/>
+                                  <span className="bord">URL</span> :<a target="_blank" href="http://jeonghologin2.link/login">http://jeonghologin2.link/login</a>
+                                  <br/>
+                                  <span className="bord">Frontend</span> : Thymleaf , javascript , CSS, HTML
+                                  <br/>
+                                  <span className="bord">Backend</span> : Spring Boot
+                                  <br/>
+                                  <span className="bord">Database</span> : MySQL
+                                  <br/>
+                                      <span className="bord">Deployment</span> : EC2, RDS , Docker, Github Action
+                                  </div>
+                              </SwiperSlide>
+                          </Swiper>
+                      </div>
+                      <div className="project_text mo-display-none">
                           <h3>게시판 프로젝트</h3>
                           <div className="project_img">
                               <img src="https://github.com/yujeong-world/project-board/assets/124220083/7de54ae6-3c36-4cb6-8ac2-cf25597b7af0"/>
                           </div>
+
                           <div className="project_content">
-                              게시판 프로젝트는 Java 17 및 Spring Boot 2.7을 기반으로 구현되었습니다.
-                              <br/>
-                              또한, Docker와 GitHub Action을 이용한 CI/CD 파이프라인 구축으로
-                              배포 과정의 자동화를 구현하였습니다.
-                              <br/>
-                              <br/>
-                              <span className="bord">주요 기능</span>
-                              <br/>
-                              회원가입 소셜 로그인을 통한 간편한 접근성을 제공함으로써 사용자 경험을 대폭 향상시켰습니다.
-                              <br/>
-                              게시글 및 댓글 작성, 수정, 삭제 기능을 사용할 수 있습니다.
-                              <br/>
-                              사용자는 검색, 좋아요, 북마크, 인기글 보기와 같은 기능을 통해 컨텐츠를 보다 효율적으로 탐색하고 관리할 수 있습니다.
-                              <br/>
-                              <br/>
+                                  게시판 프로젝트는 Java 17 및 Spring Boot 2.7을 기반으로 구현되었습니다.
+                                  <br/>
+                                  또한, Docker와 GitHub Action을 이용한 CI/CD 파이프라인 구축으로
+                                  배포 과정의 자동화를 구현하였습니다.
+                                  <br/>
+                                  <br/>
+                                  <span className="bord">주요 기능</span>
+                                  <br/>
+                                  회원가입 소셜 로그인을 통한 간편한 접근성을 제공함으로써 사용자 경험을 대폭 향상시켰습니다.
+                                  <br/>
+                                  게시글 및 댓글 작성, 수정, 삭제 기능을 사용할 수 있습니다.
+                                  <br/>
+                                  사용자는 검색, 좋아요, 북마크, 인기글 보기와 같은 기능을 통해 컨텐츠를 보다 효율적으로 탐색하고 관리할 수 있습니다.
+                                  <br/>
+                                  <br/>
+
                               <span className="bord">GitHub</span> <a target="_blank" href="https://github.com/jeongho22/Board_personal">https://github.com/jeongho22/Board_personal</a>:
                               <br/>
                               <span className="bord">URL</span> :<a target="_blank" href="http://jeonghologin2.link/login">http://jeonghologin2.link/login</a>
@@ -364,12 +424,12 @@ function MainPage() {
                               1년차 개발자로서 경험을 쌓아가며, 전문적인 역량을 키워나가고 있습니다.
                               <br/>
                               이전 직장을 다니면서 실무와 맞닿아있는 프로젝트를 진행하며 웹 개발의 핵심 프로세스를 이해하고,
-                              현재는 더 다양한 기술을 탐구하며 더 나은 솔루션을 찾고 있습니다.
+                              <span className="font_blue">현재는 더 다양한 기술을 탐구하며 더 나은 솔루션을 찾고 있습니다.</span>
                               <br/>
                               <br/>
-                              최근에는 AWS와 Doker와 같은 클라우드 및 컨테이너 기술에 대해서 집중적으로 학습하고 있습니다.
+                              <span className="font_blue">최근에는 AWS와 Doker와 같은 클라우드 및 컨테이너 기술</span>에 대해서 집중적으로 학습하고 있습니다.
                               <br/>
-                              이를 통해 확장성 있는 애플리케이션 아키텍쳐를 설계하고, 효율적인 배포 및 관리를 위한 노력을 기울이고 있습니다.
+                              이를 통해  <span className="font_blue">확장성 있는 애플리케이션 아키텍쳐를 설계</span>하고, 효율적인 배포 및 관리를 위한 노력을 기울이고 있습니다.
                               <br/>
                               <br/>
                               새로운 도전과 성장의 기회를 제공하는 회사에서 함께 일하며, 제 비전을 현실로 만들어가고자 합니다.
